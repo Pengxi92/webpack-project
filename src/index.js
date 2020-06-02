@@ -1,3 +1,5 @@
+import './index.less';
+
 const write = () => {
   document.getElementById('root').innerText = 'hello webpack!';
 }
