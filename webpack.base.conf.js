@@ -10,7 +10,8 @@ const baseWebpackConfig = {
     filename: '[name].js',
     chunkFilename: '[name].js',
   },
-  mode: 'production',
+  // mode: 'production',
+  mode: 'development',
   module: {
     rules: [
       {
@@ -32,6 +33,13 @@ const baseWebpackConfig = {
         ],
       }
     ],
+  },
+  devServer: {
+    // port: 8082,
+    hot: true,
+    contentBase: './dist',
+    host: 'test.m.iqiyi.com',
+		port: '9393'
   },
 };
 
